@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#phone{
+    width: 320px;
+    height: 600px;
+    background: #000;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    color: #ccc;
+}
+.top{
+    width: 320px;
+    height: 23px;
+    background: url('../images/1.png');
+}
+.title{
+    width: 320px;
+    height: 30px;
+    background: url('../images/2.png');
+    line-height: 30px;/*一行文本所占的高度*/
+    font-size: 20px;
+    font-weight: bold;
+}
+.singer{
+    width: 320px;
+    height: 20px;
+    line-height: 20px;/*一行文本所占的高度*/
+    font-size: 14px;
+}
+.play{
+    width: 190px;
+    height: 190px;
+    background: url('../images/3.png');
+    margin: 10px auto;
+    border-radius: 50%;
+}
+.rotate{
+    /*css3自定义动画：动画的名称、动画的执行时间、匀速运动、无限重复*/
+    animation: rot 10s linear infinite;
+}
+.rotatePause{
+    animation-play-state: paused;
+}
+/*规定动画的关键帧*/
+@keyframes rot {
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+@-webkit-keyframes rot {
+
+}
+.content{
+    width: 300px;
+    height: 280px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 20px;
+    overflow: hidden;
+}
+#txt{
+    display: none;
+}
+.activeP{
+    color: red;
+    font-size: 18px;
+}
+#lrc{
+    position: relative;
+    top: 0;
+}
+#canvas{
+    display: block;
+    background: #000;
+    margin: 0 auto;
+}
